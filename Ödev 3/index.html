@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f2f2f2;
+        }
+
+        .navbar {
+            width: 100%;
+            height: 50px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 999;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: 100%;
+        }
+
+        .navbar ul li {
+            margin-right: 20px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #000;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .navbar ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .navbar ul li i {
+            font-size: 20px;
+            color: #000;
+        }
+
+        .navbar ul li i:hover {
+            color: #777;
+            cursor: pointer;
+        }
+
+        .search {
+            width: 100%;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .search img {
+            width: 272px;
+            height: 92px;
+            margin-bottom: 20px;
+        }
+
+        .search form {
+            width: 50%;
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid #dfe1e5;
+            border-radius: 24px;
+            padding: 0 20px;
+        }
+
+        .search form input {
+            width: 100%;
+            height: 100%;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .search form button {
+            width: 50px;
+            height: 50px;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+
+        .search form button i {
+            font-size: 20px;
+            color: #4285f4;
+        }
+
+        .search form button:hover i {
+            color: #777;
+        }
+
+        .search button {
+            width: 50%;
+            height: 50px;
+            border: none;
+            outline: none;
+            background-color: #f8f9fa;
+            border-radius: 24px;
+            font-size: 16px;
+            font-weight: 500;
+
+            cursor: pointer;
+        }
+
+        .search button:hover {
+            background-color: #e9ebee;
+        }
+
+        .footer {
+            width: 100%;
+            height: 50px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            z-index: 999;
+        }
+        
+        .footer ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        
+        .footer ul li {
+            margin: 0 10px;
+        }
+        
+        .footer ul li a {
+            text-decoration: none;
+            color: #000;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .footer ul li a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Google Navbar -->
+
+    <div class="navbar">
+        <ul>
+            <li><a href="#">Gmail</a></li>
+            <li><a href="#">Görseller</a></li>
+            <li><i class="fas fa-th"></i></li>
+            <li><i class="fas fa-user-circle"></i></li>
+        </ul>
+    </div>
+
+    <!-- Google Search -->
+
+    <div class="search">
+        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Logo">
+        <form action="">
+            <input type="text" placeholder="Ara">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+        <button type="submit">Google'da Ara</button>
+        <button type="submit">Kendimi Şanslı Hissediyorum</button>
+    </div>
+
+    <!-- Google Footer -->
+
+    <div class="footer">
+        <ul>
+            <li><a href="#">Türkiye</a></li>
+            <li><a href="#">Hakkında</a></li>
+            <li><a href="#">Reklam</a></li>
+            <li><a href="#">İşletmeler</a></li>
+            <li><a href="#">Nasıl Çalışır</a></li>
+            <li><a href="#">Gizlilik</a></li>
+            <li><a href="#">Şartlar</a></li>
+            <li><a href="#">Ayarlar</a></li>
+        </ul>
+
+</body>
+
+</html>
